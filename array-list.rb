@@ -39,6 +39,14 @@ class ArrayList
   end
 
   def max
+    max = @storage[0] # very common pattern
+    return nil if @size == 0
+    @size.times do |i|
+      if @storage[i] > max
+        max = @storage[i]
+      end
+    end
+    return max
   end
 
 end
