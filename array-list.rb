@@ -15,6 +15,7 @@ class ArrayList
 
   # Deletes the _last_ value in the array
   def delete
+    return nil if empty?
     # @storage[@size] = 0
     return @size -= 1
   end

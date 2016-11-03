@@ -2,6 +2,10 @@
 # NODE -> contains a value and a pointer to (next_node)
 # LinkedList -> This class holds the linked list functions - adding a node, traversing and displaying the linked list
 
+# linked lists don't reserve memory that they're not using
+# non-contiguous memory so it's pointing at all these different places
+
+
 class Node
    attr_accessor :value, :next_node
 
